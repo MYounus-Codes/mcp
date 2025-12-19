@@ -1,6 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("Demo Server")
+
 @mcp.tool()
 def my_info(name: str, age: int) -> str:
     """Echo the input message"""
